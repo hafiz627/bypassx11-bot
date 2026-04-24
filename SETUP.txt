@@ -1,0 +1,58 @@
+# BypassX Bot — Setup Guide
+
+## Step 1: BotFather se Token Lena
+1. Telegram mein @BotFather search karo
+2. /newbot bhejo
+3. Bot ka naam do (jaise: BypassX Bot)
+4. Username do (jaise: bypassx_bot)
+5. Token copy karo — kuch aisa dikhega:
+   7823456789:AAFxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+---
+
+## Step 2: Railway pe Free Hosting (Recommended)
+
+1. railway.app pe jao — GitHub se login karo (free)
+2. "New Project" → "Deploy from GitHub repo" click karo
+   (pehle in files ko GitHub pe upload karo)
+   
+   YA seedha:
+   "New Project" → "Empty Project" → "Add Service" → "GitHub Repo"
+
+3. Environment Variables mein jao:
+   - Variable name: BOT_TOKEN
+   - Value: apna token paste karo
+   - Save karo
+
+4. Deploy hoga automatically — bas!
+
+---
+
+## Step 2 (Alternative): Render pe Free Hosting
+
+1. render.com pe account banao (free)
+2. "New" → "Web Service" click karo
+3. GitHub repo connect karo
+4. Settings:
+   - Build Command: pip install -r requirements.txt
+   - Start Command: python bot.py
+5. Environment mein BOT_TOKEN add karo
+6. Deploy!
+
+---
+
+## Local Test karna ho to:
+
+# Terminal mein:
+pip install -r requirements.txt
+set BOT_TOKEN=APNA_TOKEN_YAHAN   (Windows)
+export BOT_TOKEN=APNA_TOKEN_YAHAN (Mac/Linux)
+python bot.py
+
+---
+
+## Bot Use Karna:
+1. Telegram mein apna bot dhundo
+2. /start bhejo
+3. Koi bhi shortlink paste karo
+4. Bypassed link milegi!
